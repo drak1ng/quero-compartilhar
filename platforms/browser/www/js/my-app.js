@@ -61,7 +61,9 @@ $$(document).on('deviceready', function() {
 });
 
 function loadIndex(){
-   
+    $.get("http://novo.querocompartilhar.com.br/app_api/home.php", function(data){
+        $("#home-content").html(data);
+    });
 }
 
 // Option 2. Using one 'pageInit' event handler for all pages:
