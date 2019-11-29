@@ -1,0 +1,61 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+button { -webkit-appearance: none; }
+input[type=button] { -webkit-appearance: none; }
+input[type=submit] { -webkit-appearance: none; }
+
+
+body {
+    background: #fff;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    zoom:1;
+	padding-top: constant(safe-area-inset-top);
+	padding-top: env(safe-area-inset-top);
+}
+
+.page-content               { background:#FFF !important; }
+
+.navbar-btmenu              { font-size:24px; color:#000; padding:0px 15px; }
+
+.panel                      { background:#ebebeb;  }
+
+.lateral-logo               { height:80px; background:url(../img/002.png) center center no-repeat; margin-top:20px; }
+.lateral-links-grupos       { padding:24px 10px 8px 10px; font-weight:bold; font-size:18px; }
+.lateral-links              {  font-size:16px; }
+.lateral-links-item         { padding:7px 10px; color:#666; }
+
+
+
+.loading {
+    margin:60px 0px 30px 0px;
+    padding:120px 0px 20px 0px;
+    background:url(../img/loading.gif) center top no-repeat;
+    text-align:center;
+}
+
+.loading-texto {
+    font-size:18px;
+    font-weight:bold;
+    color:#666;
+}
+
+
+:root {
+    --f7-device-pixel-ratio: 2;
+}

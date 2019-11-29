@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src * 'self' 'unsafe-inline' 'unsafe-eval'; script-src * 'self' 'unsafe-inline' 'unsafe-eval'; media-src *">
+    
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=0.8, maximum-scale=0.8, minimum-scale=0.8, width=375, viewport-fit=cover, minimal-ui" />
+    
+    <meta name="theme-color" content="#4c359c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <title>Quero Compartilhar</title>
+    <link rel="stylesheet" href="lib/framework7/css/framework7.bundle.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <div class="lateral-logo"></div>
+
+            <div class="lateral-links-grupos">Institucional</div>
+            <div class="lateral-links">
+                <a href="/home/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Home</div></a>
+                <a href="/quem-somos/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Quem Somos</div></a>
+                <a href="/servicos/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Serviços</div></a>
+                <a href="/como-funciona/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Como Funciona</div></a>
+                <a href="/duvidas/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Dúvidas</div></a>
+                <a href="/contato/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Contato</div></a>
+            </div>
+
+            <div class="lateral-links-grupos">Informações</div>
+            <div class="lateral-links">
+                <a href="/politica-de-privacidade/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Política de Privacidade</div></a>
+                <a href="/politica-de-cookies/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Política de Cookies</div></a>
+                <a href="/termos-de-uso/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> Termos de Uso</div></a>
+                <a href="/oque-e-compartilhamento/"><div class="lateral-links-item"><i class="fas fa-chevron-right"></i> O que é Compartilhamento</div></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="view view-main">
+        <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+                <img src="img/001.png" width="200" />
+                <div class="right">
+                    <a href="#" class="link panel-open"><div class="navbar-btmenu"><i class="fal fa-bars"></i></div></a>
+                </div>
+            </div>
+        </div>
+
+        <div data-page="index" class="page no-navbar no-toolbar">
+            <div class="page-content">
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.bundle.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+</body>
+
+</html>
